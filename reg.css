@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    color: #2ce745;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #00e1ffca,#0109ff);
+    padding: 10px;
+}
+input:focus{
+
+	color: #0ce6db;
+	box-shadow: 0 0 5px rgba(6, 116, 6, 0.2),
+				inset 0 0 5px rgba(0,255,0,.1);
+	background: linear-gradient(#333933,#222922);
+	animation: glow .8s ease-out infinite alternate;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    max-height: max-content;
+    padding: 25px 30px;
+    background:rgb(24, 235, 137);
+}
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: rgb(2, 217, 255);
+}
+.container .heading::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b5b);
+}
+.container form .card-details{
+    margin-top: 25px;
+    display:flexbox;
+
+    justify-content: center;
+    align-items: center;
+}
+form .card-details .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 5px;
+}
+.card-details .card-box .details{
+    display: contents;
+    font-weight: 500;
+    align-items: center;
+    margin-bottom: 5px;
+    color: black;
+}
+.card-details .card-box input{
+    height: 40px;
+    width: 200%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 25px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.card-details .card-box input:focus,
+.card-details .card-box input:valid{
+    border-color: #9b59b6;
+}
+form .circal-form .circal-title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+form .circal-form .category{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    justify-content: baseline;
+}
+.button-container{
+    margin: 10px 0;
+    align-items: center;
+    padding-left: 160px;
+}
+.button-container button{
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 30px;
+    font-weight: weight;
+    color: #000000;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right, #00e1ffca,#0109ff);
+    cursor: pointer;
+    transition: 2.5s ease;
+}
+.button-container :hover{
+  background: linear-gradient(to left, #00e1ffca,#0109ff);
+    transition: 2.5s ease-out;
+    color: #ffffff;
+}
+@media (max-width:584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .card-details .card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .form .circal-form .category{
+        width: 100%;
+    }
+    .container .card-details{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .card-details::-webkit-scrollbar{
+        width: 0;
+    }
+}

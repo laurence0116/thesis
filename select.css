@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #07afd9;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #1E2B35;
+    align-items: center;
+    overflow: hidden;
+}
+h1{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #3DED97;
+    padding-bottom: 8px;
+    letter-spacing: .8rem;
+    padding: 0 40px;
+    padding-top: 10px;
+    float: inherit;
+}
+.container{
+    display: flex;
+    margin-top: -50px;
+    margin-left: 460px;
+    align-items: center;
+    height: 100vh;
+}
+.radio-tile-group{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.input-container{
+    height: 7rem;
+    width: 7rem;
+    margin: 0.5rem;
+    gap: 20%;
+    justify-content: center;
+}
+.input-container input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+.input-container .radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+   
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+.input-container ion-icon{
+    color: var(--primary-color);
+    font-size: 1.80rem;
+}
+.input-container label{
+    color: var(--primary-color);
+    font-size: 1.80rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+input:hover + .radio-tile{
+    box-shadow: 0 0 12px var(--primary-color);
+}
+input:checked + .radio-tile ion-icon,
+input:checked + .radio-tile label{
+    color: white ;
+}
+.button-container{
+    margin: 10px 0;
+    padding-right: 450px;
+}
+.button-container button{
+    width:100%;
+    margin-top: 135px;
+    margin-right: 80px;
+    padding: 20px;
+    display: block;
+    font-size: 30px;
+    font-weight: weight;
+    color: #000000;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,  #07afd9,#ff01d5);
+    cursor: pointer;
+    transition: 2.5s ease;
+}
+.button-container :hover{
+  background: linear-gradient(to left,  #07afd9,#ffffff);
+    transition: 1.5s ease-out;
+    color: #e2e2e2;
+}

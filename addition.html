@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="add.css">
+        <h1>Addition</h1>
+        <body>
+            <div class="container"></div>
+
+                    <div>
+                        <div class="score">Score: 0</div>
+                    </div>
+                </div>
+                <div class="choices">
+                    <img  src="images/one.jpg" alt="Hand Gesture 1" style="border-radius: 50px;">
+                    <img src="images/plus2.png" style="border-radius: 90px;">
+                    <img src="images/five.jpg" alt="Hand Gesture 2" style="border-radius: 50px;">
+                    <img src="images/equals.png" style=" border-radius: 90px;">
+                    <img src="images/q1.svg" style="background-color: transparent;">
+                        
+                </div>
+                <div  class="option">
+                    <img id="clickable"src="images/eight.jpg" style="border-radius: 20px;" alt="Option 1">
+                    <img id="clickable"src="images/six.jpg" style="border-radius: 20px;"alt="Option 2" >
+                    <img id="clickable"src="images/zero.png"style="border-radius: 20px;" alt="Option 3" >
+                    <img id="clickable" src="images/ten.jpg"style="border-radius: 20px;" alt="Option 4">
+                </div>
+            </div>
+</div>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the image element by its ID
+    const image = document.getElementById("clickableImage");
+
+    // Add a click event listener to the image
+    image.addEventListener("click", function() {
+        // Scroll to the appropriate box
+        document.getElementById("box1").scrollIntoView({ behavior: "smooth" });
+    });
+});
+  </script>
+</html>

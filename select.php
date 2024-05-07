@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Choose your Gender</title>
+</head>
+<body>
+    <div id="page">
+		<div id="logo">
+			<h1>SELECT YOUR GENDER</h1>
+		</div>
+        <form action="iinsert.php" method="post">
+    <div class="container">
+        <div class="radio-tile-group">
+<br>
+            <div class="input-container">
+                <input id="girl" type="radio" name="gender">
+                <div class="radio-tile">
+                    <ion-icon name="woman"></ion-icon>
+                    <label for="girl">Girl</label>
+                </div>
+            </div>
+</br>
+<br>
+            <div class="input-container">
+                <input id="boy" type="radio" name="gender">
+                <div class="radio-tile">
+                    <ion-icon name="man"></ion-icon>
+                    <label for="boy">Boy</label>
+                </div>
+            </div>
+</br>
+            <div class="button-container">
+            <button id="btnregister">Register</button>
+            </div>
+</div>
+</div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

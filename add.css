@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+        background-color: rgb(30, 38, 38);
+        background-size: cover;
+        background-size:100%;
+        image-resolution: 1080px;
+        display: block;
+        height: 100vh;
+        align-items: center;
+        padding-top: 50px;
+        overflow: hidden;
+    }
+h1{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    }
+.score{
+    float: right;
+    font-size: 30px;
+    padding-right: 30px;
+    color: white;
+
+}
+.option{
+    align-items: center;
+    position:absolute;
+    justify-content: center;
+    padding-left: 30px;
+    padding: 40px;
+    padding-top: 40px;
+}
+.option img{
+    margin-right: 43px;
+  width: 175px;
+  height: 185px;
+  background-color: white;
+padding-bottom: -30px;
+  border-radius: 90px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px black;
+  text-align: center;
+  line-height: 80px;
+  position: relative;
+  transition: all 0.2s;
+}
+.choices{
+    display:flex;
+    position: relative;
+    padding: 0 10 30px;
+    padding-top: 70px;
+    padding-left: 100px;
+
+}
+.choices img{
+    margin-right: 43px;
+   
+  width: 175px;
+  height: 185px;
+  background-color: white;
+  float: left;
+  border-radius: 3px;
+
+  cursor: pointer;
+  box-shadow: 0px 4px black;
+  text-align: center;
+  line-height: 80px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50px;
+
+}
+#clickable{
+    cursor: pointer;
+}

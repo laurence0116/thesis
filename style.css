@@ -1,0 +1,7 @@
+
+.container .box{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    border: 2px solid #333;
+}
